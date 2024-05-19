@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General styles */
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        /* Video background styles */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Header styles */
+        header {
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            height: 100vh; /* Make the header full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        header .subtext {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        header p {
+            font-size: 24px;
+            font-style: italic;
+            color: #003366; /* Dark blue color */
+        }
+
+        header a {
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        header a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <h1>Book Reviews</h1>
+        <div class="subtext">
+            <p>Explore the world of literature with our captivating book reviews. Join our community of book lovers and discover your next great read.</p>
+        </div>
+        <a href="project.html">Explore Reviews</a>
+    </header>
+</body>
+</html>
